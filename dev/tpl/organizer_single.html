@@ -1,0 +1,22 @@
+<span class="o-row-cell-name">
+	<a href="#" class="o-row-cell-name__link">
+		<% if ( firstName === null || lastName === null || firstName === '' || lastName === '' ) { %>
+			Фамилия и имя не указаны
+		<% } else { %>
+			<%= lastName %> <%= firstName %>
+		<% } %>
+	</a>
+</span>
+
+
+<span class="o-row-cell-telephone">
+	<% if ( telephone === null || telephone === '' ) { %>
+		-
+	<% } else { %>
+		<%= telephone %>
+	<% } %>
+</span>
+
+<span class="o-row-cell-delete">
+	<a href="#" class="o-row-cell-delete__link">Удалить</a>
+</span>

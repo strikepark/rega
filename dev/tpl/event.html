@@ -1,0 +1,46 @@
+<div class="event-page">
+	<h1 class="ep__h1">Описание мероприятия</h1>
+
+	<form class="ep-form">
+		<div class="ep-field ep-field-name clearfix">
+			<label class="ep-field__label" for="name">Название</label>
+			<input value="<%= name %>" type="text" class="ep-field__input" id="name" autofocus>
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="ep-field ep-field-location clearfix">
+			<label class="ep-field__label" for="location">Место проведения</label>
+			<input value="<%= location %>" type="text" class="ep-field__input" id="location">
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="ep-field ep-field-description clearfix">
+			<label class="ep-field__label" for="description">Описание</label>
+			<textarea style="resize: none" rows="3" class="ep-field__textarea" id="description"><%= description %></textarea>
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="ep-field ep-field-maxTeamSize clearfix">
+			<label class="ep-field__label" for="maxTeamSize">Размер команды</label>
+			<input value="<%= maxTeamSize %>" type="number" class="ep-field__input" id="maxTeamSize">
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="ep-field ep-field-startDate clearfix">
+			<label class="ep-field__label" for="startDate">Начало</label>
+			<input  type="text" class="ep-field__input" id="startDate">
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="ep-field ep-field-endDate clearfix">
+			<label class="ep-field__label" for="endDate">Конец</label>
+			<input type="text" class="ep-field__input" id="endDate">
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="ep-field ep-field-button">
+			<button class="ep-field__button">Сохранить</button>
+			<span class="ep-field__error"></span>
+		</div>
+	</form>
+</div>

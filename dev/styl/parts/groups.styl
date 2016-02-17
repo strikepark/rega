@@ -1,0 +1,161 @@
+@media screen and (min-width:62.0625rem)
+	.display-none
+		display none
+
+	.group-top
+		padding 2rem 0 1rem 0
+		max-width 1010px
+		margin 0 auto
+
+	.search
+		position relative
+		width 25rem
+		float left
+
+	.search__input
+		font-size 1rem
+		width 100%
+		height 3rem
+		padding 1px 0 0 38px
+		margin 0 1rem 0 0
+		float left
+		border none
+		border-radius 3px
+		background #fff url('../i/search.png') no-repeat 12px 49%
+		color #333
+		box-shadow 0 1.5px 3px rgba(0, 0, 0, 0.14), 0 1.5px 4px rgba(0, 0, 0, 0.06)
+		-webkit-appearance none
+		&:focus
+			outline none
+			box-shadow 0 3px 8px rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.1)
+		&::-webkit-search-cancel-button
+			-webkit-appearance none
+
+	.search__clear
+		background transparent url('../i/clear.png') no-repeat
+		border none
+		width 18px
+		height 18px
+		cursor pointer
+		position absolute
+		padding 0
+		right 10px
+		top 15px
+		outline none
+
+	.gt__add-group-btn,
+	.gt__refresh-table-btn
+		float right
+		font-family 'Roboto', Verdana, 'Geneva CY', 'DejaVu Sans', sans-serif
+		color #fff
+		border none
+		border-radius 4px
+		height 3rem
+		font-size 15px
+		padding 0 1rem
+		cursor pointer
+		transition all 0.2s ease
+		&:focus
+			outline none
+
+	.gt__add-group-btn
+		background rgba(92,107,192,.8)
+		margin-left 1rem
+		&:hover
+			transition none
+			background rgba(92,107,192,1)
+
+	.gt__refresh-table-btn
+		width 3rem
+		background rgba(149, 165, 166,.8) url(../i/refresh.png) no-repeat 50% 50%
+		&:hover
+			transition none
+			background rgba(149, 165, 166,1) url(../i/refresh.png) no-repeat 50% 50%
+
+	.groups-page
+		width 1010px
+		margin 0 auto
+
+	.gp-card
+		width 330px
+		margin 0 10px 15px 0
+		float left
+		height 200px
+
+	.gp-card:nth-child(3n)
+		margin 0 0 15px 0
+
+	.gp-card-top
+		position relative
+		width 100%
+		padding 12px
+		background #fff
+		border-top-left-radius 3px
+		border-top-right-radius 3px
+		box-shadow 0 1px 2px 0 rgba(0,0,0,0.2)
+
+	.gp-card-top__h2
+		padding-right 20px
+		font-size 18px
+		font-weight bold
+		overflow hidden
+		white-space nowrap
+		text-overflow ellipsis
+
+	.gp-card-top__delete
+		width 15px
+		height 15px
+		top 26px
+		right 12px
+		overflow hidden
+		cursor pointer
+		position absolute
+		margin-top -8px
+		&::before
+			transform rotate(45deg)
+			content ""
+			display block
+			height 30px
+			left 5px
+			border 1px solid #000
+			position absolute
+			top 0
+			width 30px
+		&::after
+			transform rotate(45deg)
+			content ""
+			display block
+			height 30px
+			left -20px
+			border 1px solid #000
+			position absolute
+			top 0
+			width 30px
+		&:hover
+			&::before,
+			&::after
+				border 1px solid #f00
+
+	.gp-card-bottom
+		padding 12px
+		background #fff
+		border-bottom-right-radius 3px
+		border-bottom-left-radius 3px
+		box-shadow 0 1px 2px 0 rgba(0,0,0,0.2)
+
+	.gp-card-bottom__description
+		font-size 15px
+		line-height 1.5
+		margin-bottom 10px
+
+	.gp-card-bottom__edit
+		color rgba(41, 128, 185,1)
+		border-bottom 1px dotted rgba(41, 128, 185,.4)
+		text-decoration none
+		&:hover
+			color rgba(231, 76, 60,1)
+			border-bottom-color rgba(231, 76, 60,.4)
+
+	.gp-info--loading-info,
+	.gp-info--search-info
+		padding 40px 0

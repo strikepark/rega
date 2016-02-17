@@ -1,0 +1,29 @@
+<span class="a-row-cell-name">
+	<a href="#" class="a-row-cell-name__link">
+		<% if (firstName === null || lastName === null || firstName === '' || lastName === '') { %>
+			Фамилия и имя не указаны
+		<% } else { %>
+			<%= lastName %> <%= firstName %>
+		<% } %>
+	</a>
+</span>
+
+<span class="a-row-cell-group">
+		Группа не указана
+</span>
+
+<span class="a-row-cell-status">
+	<select class="a-row-cell-status__select">
+		<% if (status.status === 1) { %>
+			<option value="1">Пришел</option><option value="0">Не пришел</option><option value="2">Вышел</option>
+		<% } else if (status.status === 2) { %>
+			<option value="2">Вышел</option><option value="1">Пришел</option><option value="0">Не пришел</option>
+		<% } else { %>
+			<option value="0">Не пришел</option><option value="1">Пришел</option><option value="2">Вышел</option>
+		<% } %>
+	</select>
+</span>
+
+<span class="a-row-cell-delete">
+	<a href="#" class="a-row-cell-delete__link">Удалить</a>
+</span>

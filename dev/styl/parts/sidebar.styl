@@ -1,0 +1,290 @@
+.sidebar-panel--hidden
+	display block
+
+@media screen and (max-width: 48.0625rem)
+	.sidebar-panel--hidden
+		display none
+
+.sidebar-header__nav-button,
+.sidebar-panel-top
+	display none
+
+// Стиль боковой панели от 320 до 768px
+@media screen and (min-width: 20rem) and (max-width: 48rem)
+	body
+		padding-top 3.5rem
+
+	.overlay
+		position absolute
+		z-index 12
+		top 0
+		left 0
+		right 0
+		bottom 0
+		background-color rgba(0,0,0,.5)
+
+	.sidebar-header
+		position fixed
+		z-index 1
+		top 0
+		left 0
+		right 0
+		height 3.5rem
+		padding 0 1rem
+		background #5c6bc0
+		// box-shadow 0 .1875rem .375rem rgba(0,0,0,.16),0 .1875rem .375rem rgba(0,0,0,.23)
+
+	.sidebar-header__nav-button
+		float left
+		margin-right 1rem
+		cursor pointer
+		border none
+		outline none
+		background 0 0
+		display block
+		font-size 1.125rem
+		line-height 3.5rem
+		padding 0
+		color #fff
+
+	.sidebar-header__logo
+		overflow hidden
+		white-space nowrap
+		text-overflow ellipsis
+		font-size 1.125rem
+		line-height 3.5rem
+		padding 0
+		color #fff
+
+	.sidebar-panel
+		position fixed
+		z-index 10000
+		top 0
+		bottom 0
+		left 0
+		overflow-x hidden
+		overflow-y auto
+		width 13.75rem
+		min-height 22rem
+		background #fafafa
+		box-shadow 0 1rem 1rem rgba(0,0,0,.2),0 1rem 1rem rgba(0,0,0,.2)
+
+	.sidebar-panel-top
+		display block
+		height 3.5rem
+		padding 0
+		box-shadow 0 1px 2px 0 rgba(0,0,0,.2)
+
+	.sidebar-panel-top__icon-back
+		float left
+		width 1.5625rem
+		height 1rem
+		margin 1.1875rem 1rem 0
+		cursor pointer
+		background url('../i/icon-back.png')
+
+	.sidebar-nav
+		margin 1.25rem 0
+
+	.sidebar-nav__link
+		font-size 1rem
+		display block
+		padding .5rem 1rem
+		text-decoration none
+		color #212121
+		&:hover
+			background #eee
+
+	.sidebar-nav__link--active
+		font-weight 500
+		background #eee
+
+	.sidebar-profile
+		position absolute
+		bottom 0
+		left 0
+		overflow hidden
+		width 100%
+		height 3.5rem
+		margin-top -3.5rem
+		cursor pointer
+		background #eee
+
+	a
+		&.sidebar-profile__link
+			display block
+			padding .625rem 1rem
+			text-decoration none
+
+	.sidebar-profile__avatar
+		float left
+		width 2.25rem
+		height 2.25rem
+		margin-right .5rem
+		background url('../i/avatar.png')
+
+	.sidebar-profile__username
+		font-size 1rem
+		line-height 2.25rem
+		display block
+		overflow hidden
+		white-space nowrap
+		text-overflow ellipsis
+		color #212121
+
+@media screen and (min-width: 20rem) and (max-width: 48rem) and (orientation: landscape)
+	body
+		padding-top 0
+
+	.sidebar-header
+		position relative
+		top 0
+		left 0
+		right 0
+
+
+// Стиль боковой панели 769 до 992px
+@media screen and (min-width: 48.0625rem) and (max-width: 62rem)
+	.sidebar
+		height 3.5rem
+		padding 0 1rem
+		background #5c6bc0
+		// box-shadow 0 .1875rem .375rem rgba(0,0,0,.16),0 .1875rem .375rem rgba(0,0,0,.23)
+
+	.sidebar-header__nav-button,
+	.sidebar-panel-top
+		display none
+
+	.sidebar-header
+		float left
+
+	.sidebar-header__logo
+		font-size 1.125rem
+		line-height 3.5rem
+		overflow hidden
+		width 8rem
+		padding-right 1rem
+		white-space nowrap
+		text-overflow ellipsis
+		color #fff
+
+	.sidebar-panel
+		float right
+
+	.sidebar-nav
+		float left
+		margin-right 1rem
+
+	.sidebar-nav__link
+		font-size .875rem
+		line-height 3.5rem
+		float left
+		padding 0 .75rem
+		text-decoration none
+		color #ecf0f1
+		&:hover
+			background rgba(255,255,255,.1)
+
+	.sidebar-nav__link--active
+		font-weight 500
+		background rgba(255,255,255,.1)
+
+	.sidebar-profile
+		float right
+
+	.sidebar-profile__avatar
+		display block
+		width 2.25rem
+		height 2.25rem
+		margin-top .625rem
+		background url('../i/avatar.png')
+
+	.sidebar-profile__username
+		display none
+
+	a
+		&.sidebar-profile__link
+			text-decoration none
+			border none
+
+	@media screen and (min-width: 50.8125rem)
+		.sidebar-nav__link
+			font-size 1rem
+
+@media screen and (min-width: 62.0625rem)
+	.layout
+		margin-left 13.75rem
+
+	.sidebar
+		position fixed
+		top 0
+		bottom 0
+		left 13.75rem
+		overflow-y auto
+		width 13.75rem
+		margin-left -13.75rem
+		background #5c6bc0
+		// box-shadow 2px 0 5px rgba(0,0,0,.3)
+
+	.sidebar-header__nav-button,
+	.sidebar-panel-top
+		display none
+
+	.sidebar-header
+		margin-bottom 2rem
+		padding 1rem
+		border-bottom 1px solid rgba(0,0,0,.1)
+
+	.sidebar-header__logo
+		font-size 1.5rem
+		overflow hidden
+		white-space nowrap
+		text-overflow ellipsis
+		color #fff
+
+	.sidebar-nav__link
+		font-size 1rem
+		display block
+		padding .5rem 1rem
+		text-decoration none
+		color #ecf0f1
+		&:hover
+			background #7986cb
+
+	.sidebar-nav__link--active
+		background #7986cb
+
+	.sidebar-profile
+		position absolute
+		bottom 0
+		left 0
+		overflow hidden
+		width 100%
+		height 3.75rem
+		margin-top -3.75rem
+		cursor pointer
+		&:hover
+			background rgba(0,0,0,.1)
+
+	a
+		&.sidebar-profile__link
+			display block
+			padding .75rem 1rem
+			text-decoration none
+
+	.sidebar-profile__avatar
+		float left
+		width 2.25rem
+		height 2.25rem
+		margin-right .5rem
+		background url('../i/avatar.png')
+
+	.sidebar-profile__username
+		font-size 1rem
+		line-height 2.25rem
+		display block
+		overflow hidden
+		max-width 9.25rem
+		white-space nowrap
+		text-overflow ellipsis
+		color #fff

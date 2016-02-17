@@ -1,0 +1,138 @@
+.event-page
+	width 500px
+	margin 20px auto
+	background #fff
+	padding 20px 20px 18px 20px
+	border-radius 3px
+	box-shadow 0 1.5px 3px rgba(0, 0, 0, 0.14), 0 1.5px 4px rgba(0, 0, 0, 0.06)
+
+.ep__h1
+	margin-bottom 1rem
+	font-size 24px
+
+.ep-field
+	margin-bottom 2rem
+
+.ep-field__label
+	display block
+	color rgba(119,119,119,1)
+	font-weight 400
+	margin-bottom .25rem
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+
+.ep-field__textarea,
+.ep-field__input
+	display block
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	border 2px solid rgba(220,220,220,1)
+	background transparent
+	border-radius 2px
+	outline none
+	padding 10px 8px
+	width 100%
+	color #000
+	&::-webkit-input-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&:-moz-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&::-moz-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&:-ms-input-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&:focus
+		border-color rgba(186,186,186,1)
+		&::-webkit-input-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+		&:-moz-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+		&::-moz-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+		&:-ms-input-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+	&:disabled
+		border-color rgba(186,186,186,.7)
+		background rgba(186,186,186,.1)
+		color rgba(169,169,169,1)
+		cursor default
+
+.ep-field__button
+	background #5a79b0
+	width 100%
+	outline none
+	border none
+	border-radius 3px
+	margin-top 1rem
+	color #fff
+	padding 16px 0
+	font bold 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	cursor pointer
+	&:hover
+		background #394964
+		color rgba(131,140, 156, 1)
+	&:active
+		box-shadow 0 1px 5px -1px rgba(0, 0, 0, .9) inset
+	&:disabled
+		background #394964
+		color rgba(131,140, 156, 1)
+		cursor default
+
+.ep-alert
+	position relative
+	width 100%
+	height 60px
+	display none
+
+.ep-alert__text__link
+	color #fff
+	text-decoration none
+	border-bottom 1px solid rgba(255,255,255,.3)
+
+.ep-alert--success
+	background rgba(39, 174, 96,1)
+
+.ep-alert--error
+	background rgba(192, 57, 43,1)
+
+.ep-alert__text
+	padding 0 50px 0 30px
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	line-height 60px
+	color rgba(255,255,255,.9)
+
+.ep-alert__close
+	width 15px
+	height 15px
+	position absolute
+	right 30px
+	top 50%
+	overflow hidden
+	cursor pointer
+	margin-top -8px
+	&::before
+		transform rotate(45deg)
+		content ""
+		display block
+		height 30px
+		left 5px
+		border 1px solid #fff
+		position absolute
+		top 0
+		width 30px
+	&::after
+		transform rotate(45deg)
+		content ""
+		display block
+		height 30px
+		left -20px
+		border 1px solid #fff
+		position absolute
+		top 0
+		width 30px

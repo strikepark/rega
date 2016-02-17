@@ -1,0 +1,32 @@
+<div class="full-page">
+	<button class="fp__close">Закрыть</button>
+
+	<form class="fp-content">
+		<div class="fp-field fp-field-name">
+			<label class="fp-field__label" for="name">Название</label>
+			<input value="<%= name %>" class="fp-field__input" id="name"></input>
+			<span class="fp-field__error">В этом поле присутствует ошибка</span>
+		</div>
+
+		<div class="fp-field fp-field-description">
+			<label class="fp-field__label" for="description">Описание</label>
+			<textarea style="resize: none" rows="3" class="fp-field__textarea" id="description"><%= description %></textarea>
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="fp-field fp-field-curator">
+			<label class="fp-field__label">Куратор</label>
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="fp-field fp-field-members">
+			<label class="fp-field__label">Участники</label>
+			<span class="fp-field__error"></span>
+		</div>
+
+		<div class="fp-field fp-field-button">
+			<button class="fp-field__button">Сохранить группу</button>
+			<span class="fp-field__error--top"></span>
+		</div>
+	</form>
+</div>

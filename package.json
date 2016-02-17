@@ -1,0 +1,35 @@
+{
+  "name": "rega",
+  "version": "0.1.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-csso": "^1.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^1.2.0",
+    "gulp-stylus": "^2.0.6",
+    "gulp-watch": "^4.3.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.7",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jscs": "^3.0.0",
+    "gulp-jslint": "^0.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-stylus": "^2.0.7",
+    "gulp-uglify": "^1.4.1",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.0",
+    "rimraf": "^2.4.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

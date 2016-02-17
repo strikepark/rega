@@ -1,0 +1,213 @@
+html,
+body,
+.layout,
+.content
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	line-height 1.5
+	height 100%
+	background rgba(236, 240, 241,1)
+
+.login-page
+	position fixed
+	top 0
+	left 0
+	width 100%
+	height 100%
+	background url(../i/login_bg/3.jpg) no-repeat center center fixed
+	-webkit-background-size cover
+	-moz-background-size cover
+	-o-background-size cover
+	background-size cover
+
+.lp-load
+	background #212121
+	height 100%
+	display flex
+	justify-content center
+	align-items center
+
+.lp-load__spin
+	width 64px
+	height 64px
+	background #212121 url(../i/spin_big.gif)
+
+.lp-content
+	max-width 400px
+	width 90%
+	margin 50px auto
+	padding 30px 40px 8px 40px
+	background rgba(33,33,33,.9)
+	border-radius 5px
+
+.lp-field
+	margin-bottom 2rem
+
+.lp-field__label
+	display block
+	color rgba(166,166,166,1)
+	font-weight 400
+	margin-bottom .25rem
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+
+.lp-field__textarea,
+.lp-field__input
+	display block
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	border 2px solid rgba(86,86,86,1)
+	background transparent
+	border-radius 2px
+	outline none
+	padding 10px 8px
+	width 100%
+	color #fff
+	&::-webkit-input-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&:-moz-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&::-moz-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&:-ms-input-placeholder
+		font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+		color rgba(142,142,142,1)
+	&:focus
+		border-color rgba(186,186,186,1)
+		&::-webkit-input-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+		&:-moz-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+		&::-moz-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+		&:-ms-input-placeholder
+			font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+			color rgba(169,169,169,1)
+	&:disabled
+		border-color rgba(86,86,86,1)
+		background rgba(46,46,46,1)
+		color rgba(169,169,169,1)
+		cursor default
+
+.lp-field__label--checkbox
+	display block
+	padding-left 26px
+	text-indent -26px
+	color rgba(166,166,166,1)
+	font-size 15px
+
+.lp-field__input--checkbox
+	outline none
+	-webkit-appearance none
+	-moz-appearance none
+	-ms-appearance none
+	-o-appearance none
+	appearance none
+	border: none
+	width 18px
+	height 18px
+	padding 0
+	margin 0
+	vertical-align bottom
+	position relative
+	top -2px
+	outline none
+	*overflow hidden
+	cursor pointer
+	transition all 0.2s ease
+	border 2px solid rgba(86,86,86,1)
+	border-radius 2px
+	&:hover
+		border-color rgba(186,186,186,1)
+	&:active
+		-webkit-transform scale(.9)
+		-ms-transform scale(.9)
+		transform scale(.9)
+	&:checked
+		transition none
+		border-color #5a79b0
+		background #5a79b0 url('../i/checkbox.png') no-repeat 1px 2px
+	&:disabled
+		border-color rgba(86,86,86,1)
+		background rgba(46,46,46,1)
+		color rgba(169,169,169,1)
+		cursor default
+
+.lp-field__error
+	display none
+
+.lp-field--error .lp-field__input
+	border-color #ff8a76
+	background #2e2726
+
+.lp-field--error .lp-field__error
+	display block
+	font-size 13px
+	color rgba(166,166,166,1)
+
+.lp-field__button
+	background #5a79b0
+	width 100%
+	outline none
+	border none
+	border-radius 3px
+	margin-top 1rem
+	color #fff
+	padding 16px 0
+	font bold 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	cursor pointer
+	&:hover
+		background #394964
+		color rgba(131,140, 156, 1)
+	&:active
+		box-shadow 0 1px 5px -1px rgba(0, 0, 0, .9) inset
+	&:disabled
+		background #394964
+		color rgba(131,140, 156, 1)
+		cursor default
+
+.lp-alert
+	position relative
+	width 100%
+	height 60px
+	display none
+	background rgba(192, 57, 43,1)
+
+.lp-alert__text
+	padding 0 50px 0 30px
+	font normal 100% 'PT Sans', 'Helvetica Neue', 'Helvetica', 'Verdana', 'Geneva CY', 'DejaVu Sans', sans-serif
+	line-height 60px
+	color rgba(255,255,255,.9)
+
+.lp-alert__close
+	width 15px
+	height 15px
+	position absolute
+	right 30px
+	top 50%
+	overflow hidden
+	cursor pointer
+	margin-top -8px
+	&::before
+		transform rotate(45deg)
+		content ""
+		display block
+		height 30px
+		left 5px
+		border 1px solid #fff
+		position absolute
+		top 0
+		width 30px
+	&::after
+		transform rotate(45deg)
+		content ""
+		display block
+		height 30px
+		left -20px
+		border 1px solid #fff
+		position absolute
+		top 0
+		width 30px

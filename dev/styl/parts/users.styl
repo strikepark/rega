@@ -1,0 +1,235 @@
+@media screen and (min-width:62.0625rem)
+	.display-none
+		display none
+
+	.content-top,
+	.attendee-top,
+	.organizer-top
+		padding 2rem 0 1rem 0
+		max-width 1000px
+		margin 0 auto
+
+	.search
+		position relative
+		width 25rem
+		float left
+
+	.search__input
+		font-size 1rem
+		width 100%
+		height 3rem
+		padding 1px 0 0 38px
+		margin 0 1rem 0 0
+		float left
+		border none
+		border-radius 3px
+		background #fff url('../i/search.png') no-repeat 12px 49%
+		color #333
+		box-shadow 0 1.5px 3px rgba(0, 0, 0, 0.14), 0 1.5px 4px rgba(0, 0, 0, 0.06)
+		-webkit-appearance none
+		&:focus
+			outline none
+			box-shadow 0 3px 8px rgba(0, 0, 0, 0.16), 0 3px 8px rgba(0, 0, 0, 0.1)
+		&::-webkit-search-cancel-button
+			-webkit-appearance none
+
+	.search__clear
+		background transparent url('../i/clear.png') no-repeat
+		border none
+		width 18px
+		height 18px
+		cursor pointer
+		position absolute
+		padding 0
+		right 10px
+		top 15px
+		outline none
+
+	.at__add-user-btn,
+	.at__refresh-table-btn,
+	.ot__add-user-btn,
+	.ot__refresh-table-btn
+		float right
+		font-family 'Roboto', Verdana, 'Geneva CY', 'DejaVu Sans', sans-serif
+		color #fff
+		border none
+		border-radius 4px
+		height 3rem
+		font-size 15px
+		padding 0 1rem
+		cursor pointer
+		transition all 0.2s ease
+		&:focus
+			outline none
+
+	.at__add-user-btn,
+	.ot__add-user-btn
+		background rgba(92,107,192,.8)
+		margin-left 1rem
+		&:hover
+			transition none
+			background rgba(92,107,192,1)
+
+	.at__refresh-table-btn,
+	.ot__refresh-table-btn
+		width 3rem
+		background rgba(149, 165, 166,.8) url(../i/refresh.png) no-repeat 50% 50%
+		&:hover
+			transition none
+			background rgba(149, 165, 166,1) url(../i/refresh.png) no-repeat 50% 50%
+
+	.o-row--header,
+	.o-row,
+	.a-row--header,
+	.a-row
+		line-height 55px
+		max-width 1000px
+		margin 0 auto
+		height 55px
+		background #fff
+		color rgba(0,0,0,.7)
+		border-bottom 1px solid rgba(236, 240, 241,1)
+		box-shadow 0 1.5px 3px rgba(0, 0, 0, 0.14), 0 1.5px 4px rgba(0, 0, 0, 0.06)
+
+	.o-row:last-child,
+	.a-row:last-child
+		margin-bottom 40px
+
+	.o-row--loading-info,
+	.o-row--search-info
+	.a-row--loading-info,
+	.a-row--search-info
+		max-width 1000px
+		margin 0 auto
+		padding 30px 0
+		background #fff
+		border-bottom 1px solid rgba(236, 240, 241,1)
+		box-shadow 0 1.5px 3px rgba(0, 0, 0, 0.14), 0 1.5px 4px rgba(0, 0, 0, 0.06)
+
+	.loading
+		margin 0 auto
+		width 64px
+		height 64px
+		background url(../i/spin_users.gif) no-repeat
+
+	.search__empty
+		width 251px
+		height 113px
+		background url('../i/empty.png')
+		text-indent 100%
+		white-space nowrap
+		overflow hidden
+		margin 0 auto
+
+	.o-row-cell-name
+		float left
+		overflow hidden
+		width 40%
+		// border-left 5px solid transparent
+		padding 0 1rem
+		white-space nowrap
+		text-overflow ellipsis
+
+	.o-row-cell-name__link
+		text-decoration none
+		border-bottom 1px dotted rgba(41, 128, 185,.4)
+		color rgba(41, 128, 185,1)
+		font-size 17px
+		&:hover
+			color rgba(192, 57, 43,1)
+			border-bottom 1px dotted rgba(192, 57, 43,.4)
+
+	.o-row-cell-telephone
+		float left
+		overflow hidden
+		width 45%
+		padding 0 .5rem
+		white-space nowrap
+		text-overflow ellipsis
+
+	.o-row-cell-delete
+		float left
+		overflow hidden
+		width 15%
+		padding 0 1.25rem
+		white-space nowrap
+		text-overflow ellipsis
+		line-height 50px
+		text-align right
+
+	.o-row-cell-delete__link
+		font-size 15px
+		color rgba(231, 76, 60,1)
+		border-bottom 1px dotted rgba(231, 76, 60,.4)
+		text-decoration none
+		&:hover
+			color #000
+			border-bottom 1px dotted rgba(0, 0, 0,.4)
+
+	.a-row-cell-name
+		float left
+		overflow hidden
+		width 40%
+		padding 0 1rem
+		white-space nowrap
+		text-overflow ellipsis
+
+	.a-row-cell-name__link
+		text-decoration none
+		border-bottom 1px dotted rgba(41, 128, 185,.4)
+		color rgba(41, 128, 185,1)
+		font-size 17px
+		&:hover
+			color rgba(192, 57, 43,1)
+			border-bottom 1px dotted rgba(192, 57, 43,.4)
+
+	.a-row-cell-group
+		float left
+		overflow hidden
+		width 28%
+		padding 0 .5rem
+		white-space nowrap
+		text-overflow ellipsis
+		color rgba(0,0,0,.9)
+
+	.a-row-cell-status
+		float left
+		width 17%
+		padding 0 .5rem
+
+	.a-row-cell-delete
+		float left
+		overflow hidden
+		width 15%
+		padding 0 1.25rem
+		white-space nowrap
+		text-overflow ellipsis
+		line-height 50px
+		text-align right
+
+	.a-row-cell-delete__link
+		font-size 15px
+		color rgba(231, 76, 60,1)
+		border-bottom 1px dotted rgba(231, 76, 60,.4)
+		text-decoration none
+		&:hover
+			color #000
+			border-bottom 1px dotted rgba(0, 0, 0,.4)
+
+	.a-row-cell-status__select
+		font-size 13px
+		line-height 28px
+		max-width 100%
+		height 30px
+		padding-left 2px
+		padding-right 18px
+		cursor pointer
+		color #000
+		border 1px solid #cbcbcb
+		border-radius 3px
+		background url('../i/arrows.png') no-repeat 94% 50%
+		-webkit-appearance none
+		-moz-appearance none
+		appearance none
+		&:hover
+			background rgba(238,238,238,.5) url('../i/arrows.png') no-repeat 94% 50%
